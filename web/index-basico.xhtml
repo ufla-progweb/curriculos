@@ -8,12 +8,12 @@
         <meta charset="utf-8"/>
         <title>Livro de Currículos</title>
     </h:head>
-
     <h:body>
         <h1>Livro de Currículos</h1>
         <hr/>
         <h:messages errorStyle="color: red;" infoStyle="color: green"/>
-        <h:form>
+        <h:form id="formulario">
+            <h:commandLink value="Versão com Primefaces" action="index" immediate="true"/><br/>
             <h:panelGrid columns="2">
                 <h:outputLabel value="Nome" for="txNome"/>
                 <h:inputText id="txNome" value="#{curriculoBean.curriculo.nome}"
