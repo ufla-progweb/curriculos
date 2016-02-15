@@ -22,7 +22,7 @@
                     <h:panelGroup>
                         <p:inputText id="txLattes" value="#{curriculoBean.curriculo.linkLattes}" required="true" requiredMessage="O campo 'Link para Lattes' é obrigatório!"/>           
                         #{' '}
-                        <h:commandButton value="Salvar" action="#{curriculoBean.salvar}"/>
+                        <p:commandButton ajax="false" value="Salvar" action="#{curriculoBean.salvar}"/>
                     </h:panelGroup>
                 </p:panelGrid>
                 <hr/>
